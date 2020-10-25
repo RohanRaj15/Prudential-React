@@ -15,16 +15,16 @@ export class Dashboard extends Component {
             datasets: [{
                 data: [40, 15, 20, 25],
                 backgroundColor: [
-                    '#FF6384',
-                    '#36A2EB',
-                    '#FFCE56',
-                    '#FF3031'
+                    '#0A3D62',
+                    'green',
+                    '#ffcc00',
+                    '#ff6600'
                 ],
                 hoverBackgroundColor: [
-                    '#FF6384',
-                    '#36A2EB',
-                    '#FFCE56',
-                    '#FF3031'
+                    '#0A3D62',
+                    'green',
+                    '#ffcc00',
+                    '#ff6600'
                 ]
             }]
         };
@@ -55,6 +55,12 @@ export class Dashboard extends Component {
                                 <Doughnut
                                 height={170}
                                 options={{
+                                    elements: {
+                                        arc: {
+                                            borderWidth: 0
+                                        },
+
+                                    },
                                     cutoutPercentage: 65,
                                     legend: {
                                         display: true,

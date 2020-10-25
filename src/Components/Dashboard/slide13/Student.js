@@ -20,21 +20,20 @@ const state1 = {
 	labels: [ 'Age 25', 'Today', '', 'Age 32' ],
 	datasets: [
 		{
-			label: '',
 			fill: true,
+			label: '1',
 			lineTension: 0,
-			backgroundColor: [ '#009900' ],
-			borderWidth: 0,
+			backgroundColor: '#009900',
 			data: [ 0, 25 ],
 			pointRadius: 0
 		},
 		{
-			label: '',
+			label: '2',
 			fill: true,
 			lineTension: 0,
-			backgroundColor: [ '#C0C0C0' ],
+			backgroundColor: '#C0C0C0',
 			borderWidth: 0,
-			data: [ 0, 25, 50, 75 ],
+			data: [0,25, 50, 75 ],
 			pointRadius: 0
 		}
 	]
@@ -131,7 +130,7 @@ export class Student extends Component {
 							</div>
 						</div>
 						<div className="row mt-3 ml-1">
-							<h5>We recommend:</h5>
+							<h5><b>We recommend:</b></h5>
 						</div>
 						<div className="row mt-3">
 							<div className="col-md-6 col-sm-12">
