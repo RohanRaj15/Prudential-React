@@ -45,7 +45,7 @@ class Onboarding extends React.Component{
                             <Typography variant="h3">Onboarding</Typography>
                         </Grid>
                         <Grid item lg={8} md={8} sm={12} xs={12} justify="flex-start">
-                            <Stepper  color="" alternativeLabel={true} >
+                            <Stepper style={{backgroundColor:"transparent",marginLeft:'-10%'}} color="" alternativeLabel={true} >
                                 {steps.map((label) => (
                                     <Step key={label}>
                                         <StepLabel>{label}</StepLabel>

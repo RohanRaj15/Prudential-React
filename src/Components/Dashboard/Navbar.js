@@ -164,6 +164,48 @@ export default function Dashboard() {
                 <Tab></Tab>
             
             </Container>
+        </main>:selectedIndex===1?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+                <h1>ACCOUNTS</h1>
+            
+            </Container>
+        </main>:selectedIndex===2?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+            <h1>PROFILE</h1>
+            
+            </Container>
+        </main>:selectedIndex===3?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+            <h1>ACTIVITY</h1>
+            
+            </Container>
+        </main>:selectedIndex===4?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+            <h1>SUPPORT</h1>
+            
+            </Container>
+        </main>:selectedIndex===5?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+            <h1>ADD CASH</h1>
+            
+            </Container>
+        </main>:selectedIndex===6?
+            <main className={classes.content}>
+            <div className={classes.appBarSpacer} />
+            <Container maxWidth="lg" className={classes.container}>
+            <h1>GET CASH</h1>
+            
+            </Container>
         </main>:null
         }
         </div> 
