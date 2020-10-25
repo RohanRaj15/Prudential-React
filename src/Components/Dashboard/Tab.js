@@ -11,9 +11,11 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './Tab.css'
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import Dashboard from './slide11/Dashboard';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+
+import Dashboard from './slide11/Dashboard';
+import Onboarding from './slide09/Onboarding'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -98,7 +100,7 @@ function TabPanel(props) {
       One Time Loan
       </TabPanel>
       <TabPanel value={value} index={4}>
-      OnBoarding
+      <Onboarding/>
       </TabPanel>
     </div>
   );
