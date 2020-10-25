@@ -1,20 +1,36 @@
 import React from 'react'
-
-
 import {Line} from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function AreaChart(){
     const data={
         type:'Area',
-            labels:['Age 25','','','','Retirement',''],
-            datasets:[{
+            labels:['Age 25','','','','','','Retirement','Age 85'],
+            datasets:[
+                {
+                    label:'',
+                     data:[125,165,0],
+                     backgroundColor:'rgba(0, 255, 0, 0.3)',
+                     pointBackgroundColor:null,
+                     lineTension:0,
+                     pointRadius:0
+                  },{
+                    label:'',
+                     data:[0,0,0,0,0,350,650,800],
+                     backgroundColor:'rgba(0, 255, 0, 0.3)',
+                     pointBackgroundColor:null,
+                     lineTension:0,
+                     pointRadius:0
+                  },
+                {
                label:'',
-                data:[125,250,200,500,750,900],
-                backgroundColor:'green',
+                data:[125,165,250,200,350,450,750,900],
+                backgroundColor:'#009900',
                 pointBackgroundColor:null,
-                lineTension:0
-             } ]
+                lineTension:0,
+                pointRadius:0
+             },
+              ]
     }
     const option={
         legend:{
@@ -25,23 +41,24 @@ function AreaChart(){
             fontSize:100
         },
     scales:{
-        yAxes:[
-            {
-                ticks:{
-                    min:0,
-                    max:1000,
-                    stepsize:250
-                },
-                position:'right',
-               
-            },
-            
-        ],
+        yAxes: [{
+            position:'right',
+            ticks: {
+                beginAtZero:true,
+                min: 0,
+                max: 1250,
+                stepSize:250,
+                    
+            }
+          }],
         xAxes:[
             {
                 display:true,
-                fontSize:500
+                ticks: {
+                    fontSize: 16,
+                    fontStyle: "bold"
                 
+                }
             }
         ],
         gridLines:[
@@ -54,7 +71,7 @@ function AreaChart(){
 maintainAspectRatio:false}
     
     
-    return (<Line width={800}height={500}  data={data}  options={option}/>
+    return (<Line width={800}height={300}  data={data}  options={option}/>
        
         )
 }

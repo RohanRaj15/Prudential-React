@@ -82,14 +82,17 @@ export default function Goals() {
 						<div className="mt-3">
 							<span className="text-primary">
 								<FaChevronCircleRight />
-							</span>&nbsp;&nbsp;<span className="text-primary">Continue saving when you can</span>
+							</span>&nbsp;&nbsp;<span className="h6 text-primary"><b>Continue saving when you can</b></span>
+							<p className='mt-4 ml-4 mr-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 						</div>
 						<div className="mt-3">
 							<span className="text-danger">
 								<FaChevronCircleDown />
-							</span>&nbsp;&nbsp;<span className="text-danger">
-								Decrease contributors to your IRA for now
+							</span>&nbsp;&nbsp;<span className="h6 text-danger">
+								<b>Decrease contributors to your IRA for now</b>
 							</span>
+							<p className='mt-4 ml-4 mr-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
 						</div>
 					</div>
 					<div className="col-md-4">
@@ -138,9 +141,11 @@ export default function Goals() {
 						<div className="mt-3">
 							<span className="text-success">
 								<FaChevronCircleUp />
-							</span>&nbsp;&nbsp;<span className="text-success">
-								Increase monthly contributors to your 401(k)
+							</span>&nbsp;&nbsp;<span className="h6 text-success">
+								<b>Increase monthly contributors to your 401(k)</b>
 							</span>
+							<p className='mt-4 ml-4 mr-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
 						</div>
 						<br />
 					</div>

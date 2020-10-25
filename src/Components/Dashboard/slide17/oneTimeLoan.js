@@ -32,15 +32,11 @@ class Dashboard extends Component {
             <AreaChart />
           </div>
 
-          <div className="box1">
-            well funded <span>&#8505;</span>
+          <div className="box1 mt-4 ml-3 text-light">
+            well funded &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
           </div>
-          <Typography paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-            dolor purus non enim praesent elementum facilisis leo vel. Risus at
-            ultrices mi tempus imperdiet. Semper risus in hendrerit gravida
-            rutrum quisque non tellus.
+          <Typography className="ml-3 mt-3" paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Typography>
         </div>
       </div>

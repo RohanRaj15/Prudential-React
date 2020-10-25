@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Doughnut, Line } from 'react-chartjs-2';
 
+import { FaChevronCircleRight } from 'react-icons/fa';
+import { FaChevronCircleDown } from 'react-icons/fa';
+
 const state = {
 	labels: [ 'completed', 'Not completed' ],
 	datasets: [
@@ -114,7 +117,7 @@ export class Student extends Component {
 											className="btn btn-block text-light"
 											style={{ backgroundColor: '#009900' }}
 										>
-											View Details&nbsp;&nbsp;<span className="badge text-success badge-light badge-sm">+</span>
+											Well funded&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>
 										</button>
 									</div>
 									<div className="col-md-9">
@@ -134,8 +137,8 @@ export class Student extends Component {
 							<div className="col-md-6 col-sm-12">
 								<div className="card card1 mb-5">
 									<h6 className="text text-info">
-										<span className="badge badge-info text-light">+</span>&nbsp;&nbsp;Continue
-										saving when you can
+									<FaChevronCircleRight />&nbsp;&nbsp;<b>Continue
+										saving when you can</b>
 									</h6>
 									<p className="ml-4">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -146,8 +149,8 @@ export class Student extends Component {
 							<div className="col-md-6 col-sm-12">
 								<div className="card card1 mb-5">
 									<h6 className="text text-danger">
-										<span className="badge badge-danger text-light">-</span>&nbsp;&nbsp;Decrease
-										contributions to your IRA for now!
+									<FaChevronCircleDown />&nbsp;&nbsp;<b>Decrease
+										contributions to your IRA for now!</b>
 									</h6>
 									<p className="ml-4">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

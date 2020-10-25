@@ -48,7 +48,7 @@ export class Dashboard extends Component {
                                     <span className='h3'><b>Benefits overview</b></span>
                                 </div>
                                 <div className='col-md-2 col-sm-12'>
-                                <a href="#" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
+                                <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
                             <div className='card-body mb-2'>
@@ -78,7 +78,7 @@ export class Dashboard extends Component {
                                     <span className='h4'><b>Contributions overview</b></span>
                                 </div>
                                 <div className='col-md-2 col-sm-12'>
-                                    <a href="#" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
+                                    <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
                             <div className='card-body'>
