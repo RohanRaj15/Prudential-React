@@ -15,7 +15,8 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 import Dashboard from './slide11/Dashboard';
-import Onboarding from './slide09/Onboarding'
+import Onboarding from './slide09/Onboarding';
+import OneTimeLoan from './slide17/oneTimeLoan'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -97,7 +98,7 @@ function TabPanel(props) {
       Student Loan
       </TabPanel>
       <TabPanel value={value} index={3}>
-      One Time Loan
+      <OneTimeLoan/>
       </TabPanel>
       <TabPanel value={value} index={4}>
       <Onboarding/>
