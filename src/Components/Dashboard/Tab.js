@@ -5,17 +5,19 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './Tab.css';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import Dashboard from './slide11/Dashboard';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import Goals from './slide12/Goals';
 import Student from './slide13/Student';
+
+import Dashboard from './slide11/Dashboard';
+import Onboarding from './slide09/Onboarding';
+import OneTimeLoan from './slide17/oneTimeLoan';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -36,13 +38,6 @@ function TabPanel(props) {
 		</div>
 	);
 }
-
-TabPanel.propTypes = {
-	children: PropTypes.node,
-	index: PropTypes.any.isRequired,
-	value: PropTypes.any.isRequired
-};
-
 function a11yProps(index) {
 	return {
 		id: `scrollable-force-tab-${index}`,
@@ -57,6 +52,12 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: theme.palette.background.paper
 	}
 }));
+
+TabPanel.propTypes = {
+	children: PropTypes.node,
+	index: PropTypes.any.isRequired,
+	value: PropTypes.any.isRequired
+};
 
 export default function ScrollableTabsButtonForce() {
 	const classes = useStyles();
@@ -95,10 +96,10 @@ export default function ScrollableTabsButtonForce() {
 				<Student />
 			</TabPanel>
 			<TabPanel value={value} index={3}>
-				One Time Loan
+				<OneTimeLoan />
 			</TabPanel>
 			<TabPanel value={value} index={4}>
-				OnBoarding
+				<Onboarding />
 			</TabPanel>
 		</div>
 	);
