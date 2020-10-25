@@ -1,8 +1,6 @@
 import React from 'react'
 import {Grid,Icon,Paper,Step,StepLabel,Stepper,Typography} from '@material-ui/core'
-import {createMuiTheme,ThemeProvider,makeStyles,withStyles} from '@material-ui/core/styles'
-
-import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
+import {createMuiTheme,ThemeProvider,withStyles} from '@material-ui/core/styles'
 
 const theme = createMuiTheme({
     palette:{
@@ -28,11 +26,6 @@ const styles=(theme)=>({
 })
 
 class Onboarding extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
-
     render(){
 
         const { classes } = this.props

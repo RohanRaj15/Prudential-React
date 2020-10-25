@@ -10,7 +10,6 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import { Redirect } from 'react-router-dom'
 
 
 export default function SideNavbar(props) {
