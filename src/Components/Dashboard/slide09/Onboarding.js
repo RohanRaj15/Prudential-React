@@ -37,7 +37,7 @@ class Onboarding extends React.Component{
                 <div className={classes.root}>
                     <Grid container spacing={3}>
                         <Grid item lg={12} md={12} sm={12} xs={12}>
-                            <div style={{ width: '100%', height: 30,  borderRadius: 5, color: 'white', fontSize: 13, padding: 3 }} className={classes.info}>
+                            <div style={{ width: '100%', borderRadius: 5, color: 'white', fontSize: 13}} className={classes.info}>
                                 <p className='text-center'>You are sharing your screen with a prudential reprsentative. Please <a style={{textDecoration:'none',color:'white'}} href="prudential">Click here</a> to stop sharing</p>
                             </div>
                         </Grid>
@@ -45,7 +45,7 @@ class Onboarding extends React.Component{
                             <Typography variant="h3">Onboarding</Typography>
                         </Grid>
                         <Grid item lg={8} md={8} sm={12} xs={12} justify="flex-start">
-                            <Stepper color="" alternativeLabel={true} style={{marginLeft:-75}}>
+                            <Stepper  color="" alternativeLabel={true} >
                                 {steps.map((label) => (
                                     <Step key={label}>
                                         <StepLabel>{label}</StepLabel>

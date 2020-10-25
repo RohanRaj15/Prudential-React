@@ -36,7 +36,7 @@ export default function Goals() {
 			</h2>
 			<div className="conatiner">
 				<div className="row">
-					<div className="col-md-4">
+					<div className="col-md-4 col-sm-12 col-xs-12">
 						<Card
 							className={classes.root}
 							style={{ width: '300px', height: '330px', border: '2px solid whitesmoke' }}
@@ -52,7 +52,7 @@ export default function Goals() {
 								</Typography>
 								<br />
 								<div className="row">
-									<div className="col-md-9">
+									<div className="col-md-9 col-sm-12 col-xs-12">
 										<Typography variant="body2" component="p">
 											<h6>
 												<span className="text-primary">
@@ -68,7 +68,7 @@ export default function Goals() {
 											monthly
 										</Typography>
 									</div>
-									<div className="col-md-3" style={{ marginTop: '35px' }}>
+									<div className="col-md-3 col-sm-12 col-xs-12" style={{ marginTop: '35px' }}>
 										<DonutChart data={dataPie} />
 									</div>
 								</div>
@@ -95,7 +95,7 @@ export default function Goals() {
 
 						</div>
 					</div>
-					<div className="col-md-4">
+					<div className="col-md-4 col-sm-12 col-xs-12">
 						<Card
 							className={classes.root}
 							style={{ width: '300px', height: '330px', border: '2px solid whitesmoke' }}
@@ -149,7 +149,7 @@ export default function Goals() {
 						</div>
 						<br />
 					</div>
-					<div className="col-md-4">
+					<div className="col-md-4 col-sm-12 col-xs-12">
 						<Card
 							className={classes.root}
 							style={{ width: '300px', height: '330px', borderStyle: 'dotted', borderColor: 'grey' }}

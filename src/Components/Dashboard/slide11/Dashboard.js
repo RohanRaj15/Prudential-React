@@ -31,22 +31,23 @@ export class Dashboard extends Component {
             <div >
                 <div className='container-fluid'>
                     <div className='row mt-2'>
-                        <div className='col-md-8 col-sm-12'>
+                        <div className='col-md-8 col-sm-12 col-xs-12'>
                             <span className='h4'>Welcome to Your personalized benefit dashboard, ABC</span>
                         </div>
                     </div>
                     <div className='row mt-2'>
-                        <div className='col-md-8 col-sm-12'>
+                        <div className='col-md-8 col-sm-12 col-xs-12'>
                             <span className='h1'>Dashboard</span>
                         </div>
                     </div>
                     <div className='row mt-2'>
-                        <div className='card col-md-6 col-sm-12 mr-3 shadow bg-light'>
+                        <div className='col-md-6 col-sm-12 col-xs-12 mr-3 shadow bg-light d-flex'>
+                            <div className="card flex-fill" style={{backgroundColor:'inherit',border:'none'}}>
                             <div className='row m-2'> 
-                                <div className='col-md-10 col-sm-12'>
+                                <div className='col-md-10 col-sm-12 col-xs-12 col-sm-12'>
                                     <span className='h3'><b>Benefits overview</b></span>
                                 </div>
-                                <div className='col-md-2 col-sm-12'>
+                                <div className='col-md-2 col-sm-12 col-xs-12'>
                                 <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
@@ -76,45 +77,49 @@ export class Dashboard extends Component {
                                 data={data} />
                             </div>
                             
+                            </div>
                         </div>
-                        <div className='card col-md-5 ml-5 col-sm-12 shadow bg-light'>
-                            <div className='row m-2'>
-                                <div className='col-md-10 col-sm-12'>
+                        <div className='col-md-5 ml-5 col-sm-12 col-xs-12 shadow bg-light d-flex'>
+                            <div className="flex-fill">
+                            <div className='row mt-5'>
+                                <div className='col-md-10 col-sm-12 col-xs-12'>
                                     <span className='h4'><b>Contributions overview</b></span>
                                 </div>
-                                <div className='col-md-2 col-sm-12'>
+                                <div className='col-md-2 col-sm-12 col-xs-12'>
                                     <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
                             <div className='card-body'>
                                 <div className='row'>
-                                    <div className='col-md-12 col-sm-12'>
+                                    <div className='col-md-12 col-sm-12 col-xs-12'>
                                         <span><b>TOTAL BALANCE</b></span><br />
                                         <span className='h3'><b>$0</b></span>
                                     </div>
                                 </div><br/>
                                 <div className='row mt-3'>
-                                    <div className='col-md-6 col-sm-12'>
+                                    <div className='col-md-6 col-sm-12 col-xs-12'>
                                         <span><b>TOTAL VANGUARD ASSETS</b></span><br />
                                         <span className='h3'><b>$0</b></span>
                                     </div>
-                                    <div className='col-md-6 col-sm-12'>
+                                    <div className='col-md-6 col-sm-12 col-xs-12'>
                                         <span><b>CONNECTED ACCOUNT BALANCE</b></span><br />
                                         <span className='h3'><b>$0</b></span>
                                     </div>
                                 </div><br/>
                                 <div className='row mt-3 mb-2'>
-                                    <div className='col-md-6 col-sm-12'>
+                                    <div className='col-md-6 col-sm-12 col-xs-12'>
                                         <span><b>YEARLY CONTRIBUTIONS</b></span><br />
                                         <p className='h3'><b>$0</b></p>
                                     </div>
-                                    <div className='col-md-6 col-sm-12'>
+                                    <div className='col-md-6 col-sm-12 col-xs-12'>
                                         <span><b>RISK ATTRIBUTE</b></span><br />
                                         <p className='h3'><b>Moderate</b></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>
