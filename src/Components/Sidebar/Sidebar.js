@@ -12,7 +12,6 @@ import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import { Redirect } from 'react-router-dom'
 
-//hi
 
 export default function SideNavbar(props) {
     const [selectedIndex, setSelectedIndex] = React.useState(0);

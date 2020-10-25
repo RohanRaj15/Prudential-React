@@ -4,17 +4,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
 import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
+import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './Tab.css'
-
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import Dashboard from './slide11/Dashboard';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -79,15 +78,15 @@ function TabPanel(props) {
             textColor='#0A3D62'
             aria-label="scrollable force tabs example"
           >
-        <Tab label="Dashboard"  className="a"  icon={<PhoneIcon />} {...a11yProps(0)} />
-          <Tab label="Your Goals" className="a" icon={<FavoriteIcon />} {...a11yProps(1)} />
+        <Tab label="Dashboard"  className="a"  icon={<DashboardIcon />} {...a11yProps(0)} />
+          <Tab label="Your Goals" className="a" icon={<TrackChangesIcon />} {...a11yProps(1)} />
           <Tab label="Student Loan" className="a" icon={<PersonPinIcon />} {...a11yProps(2)} />
-          <Tab label="One Time Loan" className="a" icon={<HelpIcon />} {...a11yProps(3)} />
-          <Tab label="OnBoarding" className="a" icon={<ShoppingBasket />} {...a11yProps(4)} />
+          <Tab label="One Time Loan" className="a" icon={<MonetizationOnIcon />} {...a11yProps(3)} />
+          <Tab label="OnBoarding" className="a" icon={<InsertDriveFileIcon />} {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Dashboard
+        <Dashboard/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         Your Goals
