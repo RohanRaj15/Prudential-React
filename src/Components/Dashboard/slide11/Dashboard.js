@@ -76,7 +76,6 @@ export class Dashboard extends Component {
                                 }}
                                 data={data} />
                             </div>
-                            
                             </div>
                         </div>
                         <div className='col-md-5 mt-1 col-sm-12 col-xs-12 shadow bg-light d-flex'>
@@ -85,8 +84,8 @@ export class Dashboard extends Component {
                                 <div className='col-md-9 col-sm-12 col-xs-12'>
                                     <span className='h4'><b>Contributions overview</b></span>
                                 </div>
-                                <div className='col-md-3 col-sm-12 col-xs-12' className="text-left">
-                                    <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
+                                <div className='col-md-3 col-sm-12 col-xs-12 text-left'>
+                                    <a href="\" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
                             <div className='card-body'>
@@ -127,4 +126,4 @@ export class Dashboard extends Component {
     }
 }
 
-export default Dashboard
+export default Dashboard;
