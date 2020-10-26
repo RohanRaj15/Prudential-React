@@ -41,13 +41,13 @@ export class Dashboard extends Component {
                         </div>
                     </div>
                     <div className='row mt-2'>
-                        <div className='col-md-6 col-sm-12 mt-1 col-xs-12 mr-3 shadow bg-light d-flex'>
+                        <div className='col-md-6 col-sm-12 mt-1 col-xs-12 mr-5 shadow bg-light d-flex'>
                             <div className="card flex-fill" style={{backgroundColor:'inherit',border:'none'}}>
-                            <div className='row m-2'> 
-                                <div className='col-md-10 col-sm-12 col-xs-12 col-sm-12'>
+                            <div className='row mt-2'> 
+                                <div className='col-md-9 col-sm-12 col-xs-12 col-sm-12'>
                                     <span className='h3'><b>Benefits overview</b></span>
                                 </div>
-                                <div className='col-md-2 col-sm-12 col-xs-12'>
+                                <div className='col-md-3 col-sm-12 col-xs-12 text-left' style={{paddingTop:'5px'}}>
                                 <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>
@@ -79,13 +79,13 @@ export class Dashboard extends Component {
                             
                             </div>
                         </div>
-                        <div className='col-md-5 ml-5 mt-1 col-sm-12 col-xs-12 shadow bg-light d-flex'>
-                            <div className="flex-fill" style={{backgroundColor:'inherit',border:'none'}}>
-                            <div className='row mt-5'>
-                                <div className='col-md-10 col-sm-12 col-xs-12'>
+                        <div className='col-md-5 mt-1 col-sm-12 col-xs-12 shadow bg-light d-flex'>
+                            <div className="card flex-fill" style={{backgroundColor:'inherit',border:'none'}}>
+                            <div className='row mt-2'>
+                                <div className='col-md-9 col-sm-12 col-xs-12'>
                                     <span className='h4'><b>Contributions overview</b></span>
                                 </div>
-                                <div className='col-md-2 col-sm-12 col-xs-12'>
+                                <div className='col-md-3 col-sm-12 col-xs-12' className="text-left">
                                     <a href="edit" style={{ textTransform: 'none' }}><h5>Edit</h5></a>
                                 </div>
                             </div>

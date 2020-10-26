@@ -16,6 +16,7 @@ import '../Dashboard.css'
 import SideNavbar from '../Sidebar/Sidebar'
 import Tab from './Tab'
 
+
 const drawerWidth = 220;
 
 const useStyles = makeStyles((theme) => ({
@@ -168,42 +169,72 @@ export default function Dashboard() {
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-                <h1>ACCOUNTS</h1>
+                <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Accounts</h1>
+                    <div className="card-body" style={{paddingLeft:'25%',paddingRight:'25%'}}>
+                        <img src="./assets/accounts2.png" className="img-fluid img-thumbnail"/>
+                    </div>
+                </div>
             
             </Container>
         </main>:selectedIndex===2?
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-            <h1>PROFILE</h1>
+            <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Profile</h1>
+                    <div className="card-body" style={{paddingLeft:'25%',paddingRight:'25%'}}>
+                        <img src="./assets/profile.png" className="img-fluid img-thumbnail"/>
+                    </div>
+                </div>
             
             </Container>
         </main>:selectedIndex===3?
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-            <h1>ACTIVITY</h1>
+            <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Activity</h1>
+                    <div className="card-body" style={{paddingLeft:'25%',paddingRight:'25%'}}>
+                        <img src="./assets/activity.png" className="img-fluid img-thumbnail"/>
+                    </div>
+                </div>
             
             </Container>
         </main>:selectedIndex===4?
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-            <h1>SUPPORT</h1>
+            <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Support</h1>
+                    <div className="card-body" style={{paddingLeft:'25%',paddingRight:'25%'}}>
+                        <img src="./assets/support.png" className="img-fluid img-thumbnail"/>
+                    </div>
+                </div>
             
             </Container>
         </main>:selectedIndex===5?
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-            <h1>ADD CASH</h1>
+            <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Add Cash</h1>
+                    <div className="card-body" style={{paddingLeft:'25%',paddingRight:'25%'}}>
+                        <img src="./assets/addCash.jpg" className="img-fluid img-thumbnail"/>
+                    </div>
+                </div>
             
             </Container>
         </main>:selectedIndex===6?
             <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <Container maxWidth="lg" className={classes.container}>
-            <h1>GET CASH</h1>
+            <div className="card">
+                    <h1 className="card-title ml-5 mt-2">Get Cash</h1>
+                    <div className="card-body" style={{paddingLeft:'35%',paddingRight:'25%'}}>
+                        <img src="./assets/getCash.png" className="img-thumbnail" style={{height:'1%',width:'80%'}}/>
+                    </div>
+                </div>
             
             </Container>
         </main>:null
