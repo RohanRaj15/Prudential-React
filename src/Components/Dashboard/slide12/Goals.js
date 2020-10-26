@@ -43,7 +43,7 @@ export default function Goals() {
 						>
 							<CardContent>
 								<img
-									src={process.env.PUBLIC_URL + '/assests/image1.jpeg'}
+									src={process.env.PUBLIC_URL + '/assets/image1.jpeg'}
 									alt="Not Found"
 									style={{ width: '250px', height: '150px' }}
 								/>
@@ -102,7 +102,7 @@ export default function Goals() {
 						>
 							<CardContent>
 								<img
-									src={process.env.PUBLIC_URL + '/assests/image2.jpeg'}
+									src={process.env.PUBLIC_URL + '/assets/image2.jpeg'}
 									alt="Not Found"
 									style={{ width: '250px', height: '150px' }}
 								/>
